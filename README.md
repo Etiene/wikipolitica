@@ -1,4 +1,4 @@
 wikipolitica
 ============
 
-Um site para facilitar a pesquisa em quem votar
+Um site para facilitar a pesquisa de em quem votar
