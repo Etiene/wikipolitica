@@ -1,0 +1,31 @@
+create table profile(
+	id serial primary key,
+	user_id int,
+	description text,
+	party_id int,
+	website character varying(500),
+	birth_date date,
+	email character varying(500),
+	location_city_id int
+);
+
+create table post_profile(
+	id serial primary key,
+	profile_id int,
+	post_id int,
+	occupied_from int,
+	occupied_to int,
+	location_type int,
+	location_id int
+);
+create table post(
+	id serial primary key,
+	name character varying(100)
+);
+
+create table usr(
+	id serial primary key,
+	email character varying(500),
+	name character varying(50),
+	password character(32)
+);
