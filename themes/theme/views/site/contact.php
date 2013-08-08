@@ -5,11 +5,11 @@
 
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
-	'Contact',
+	'Contato',
 );
 ?>
 
-<h1>Contact Us</h1>
+<h1>Contato</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -18,10 +18,6 @@ $this->breadcrumbs=array(
     )); ?>
 
 <?php else: ?>
-
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
 
 <div class="form">
 
@@ -34,7 +30,7 @@ If you have business inquiries or other questions, please fill out the following
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note"><span class="required">*</span> Campos obrigatórios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -48,7 +44,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<?php if(CCaptcha::checkRequirements()): ?>
 		<?php echo $form->captchaRow($model,'verifyCode',array(
-            'hint'=>'Please enter the letters as they are shown in the image above.<br/>Letters are not case-sensitive.',
+            'hint'=>'Entre com as letras conforme mostrado na imagem de verificação acima',
         )); ?>
 	<?php endif; ?>
 
@@ -56,7 +52,7 @@ If you have business inquiries or other questions, please fill out the following
 		<?php $this->widget('bootstrap.widgets.TbButton',array(
             'buttonType'=>'submit',
             'type'=>'primary',
-            'label'=>'Submit',
+            'label'=>'Enviar',
         )); ?>
 	</div>
 
